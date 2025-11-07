@@ -1,0 +1,12 @@
+<div *ngIf="user; else pickOne" class="details">
+  <h3>{{ user.firstname }} {{ user.lastname }}</h3>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+  <p><strong>Phone:</strong> {{ user.phone }}</p>
+  <p><strong>Cell:</strong> {{ user.cell }}</p>
+  <p><strong>Address:</strong> {{ user.address?.street }}, {{ user.address?.city }}, {{ user.address?.country }}</p>
+  <p><strong>Gender:</strong> {{ user.gender }}</p>
+</div>
+
+<ng-template #pickOne>
+  <div class="placeholder"><em>Select a user to see the details.</em></div>
+</ng-template>

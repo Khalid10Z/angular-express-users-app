@@ -1,0 +1,23 @@
+{
+  "name": "@simandcure/recrutement-intern-webdev",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "npm run lint --workspaces",
+    "prettier": "npm run prettier --workspaces"
+  },
+  "author": {
+    "name": "Sim&Cure",
+    "url": "https://sim-and-cure.com/"
+  },
+  "license": "ISC",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "6.21.0",
+    "eslint": "8.57.1",
+    "prettier": "3.3.3"
+  }
+}
